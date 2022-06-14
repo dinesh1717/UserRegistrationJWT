@@ -67,3 +67,26 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
+2022-06-14 10:22:39.800 [INFO] [main] [c.b.u.UserRegistrationJwtApplication:55] Starting UserRegistrationJwtApplication using Java 17.0.2 on RYZEN5 with PID 20220 (C:\Users\91879\IdeaProjects\UserRegistrationJWT\target\classes started by 91879 in C:\Users\91879\IdeaProjects\UserRegistrationJWT)
+2022-06-14 10:22:39.803 [DEBUG] [main] [c.b.u.UserRegistrationJwtApplication:56] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-14 10:22:39.804 [INFO] [main] [c.b.u.UserRegistrationJwtApplication:634] No active profile set, falling back to 1 default profile: "default"
+2022-06-14 10:22:41.504 [WARN] [main] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-06-14 10:22:41.544 [ERROR] [main] [o.s.b.d.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
